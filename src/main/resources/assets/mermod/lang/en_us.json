@@ -1,0 +1,17 @@
+{
+  "item.mermod.sea_necklace": "Sea Necklace",
+  "item.mermod.sea_crystal": "Sea Crystal",
+  "item.mermod.mermaid_bra_modifier": "Mermaid Bra",
+  "item.mermod.tail_gradient_modifier": "Tail Gradient",
+  "item.mermod.glowing_pearl_modifier": "Glowing Pearl",
+  "item.mermod.moon_rock_modifier": "Moon Rock",
+  "item.mermod.ursula_shell_modifier": "Ursula's Shell",
+  "tooltip.mermod.modifierHint": "Hold shift and right click to remove modifiers",
+  "tooltip.mermod.canBeDyed": "Can be dyed",
+  "config.mermod.name": "Mermod Config",
+  "config.mermod.option.swimSpeed": "Swim Speed Effect",
+  "config.mermod.option.swimSpeedMultiplier": "Swim Speed Multiplier",
+  "config.mermod.option.waterBreathing": "Water Breathing Effect",
+  "config.mermod.option.nightVision": "Night Vision Effect",
+  "config.mermod.option.nightVisionFlashingFix": "Night Vision Flashing Fix"
+}

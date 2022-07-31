@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "mermod",
+  "version": "2.0",
+  "name": "Mermod",
+  "description": "Mermod adds a magical necklace that transforms you into a merperson in water!",
+  "authors": [
+    "ThatPreston"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/mermod-fabric",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "GPL-3.0-only",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "thatpreston.mermod.Mermod"
+    ],
+    "client": [
+      "thatpreston.mermod.MermodClient"
+    ],
+    "figura": [
+      "thatpreston.mermod.integration.figura.MermodFiguraAPI"
+    ]
+  },
+  "mixins": [
+    "mermod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
