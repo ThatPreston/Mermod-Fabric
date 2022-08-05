@@ -13,5 +13,5 @@
   "config.mermod.option.swimSpeedMultiplier": "Swim Speed Multiplier",
   "config.mermod.option.waterBreathing": "Water Breathing Effect",
   "config.mermod.option.nightVision": "Night Vision Effect",
-  "config.mermod.option.nightVisionFlashingFix": "Prevent Night Vision Flashes"
+  "config.mermod.option.preventNightVisionFlashes": "Prevent Night Vision Flashes"
 }
