@@ -34,7 +34,7 @@ public class MermodConfig implements Config {
     @Comment(value = "Underwater night vision as a mermaid")
     public boolean nightVision = true;
     @Comment(value = "Removes the flashing effect when night vision is almost expired")
-    public boolean nightVisionFlashingFix = true;
+    public boolean preventNightVisionFlashes = true;
     @Override
     public String getName() {
         return "mermod";
