@@ -1,3 +1,4 @@
+![Mermod icon](https://i.imgur.com/6D3w3Ox.png)
 # Mermod
 
 ## Description
