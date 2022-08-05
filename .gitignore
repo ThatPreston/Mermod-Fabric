@@ -1,4 +1,4 @@
- gradle
+# gradle
 
 .gradle/
 build/
@@ -27,10 +27,6 @@ runV2/
 bin/
 .classpath
 .project
-
-# Files from Forge MDK
-
-forge*changelog.txt
 
 # macOS
 
