@@ -1,4 +1,4 @@
-# gradle
+ gradle
 
 .gradle/
 build/
@@ -16,6 +16,10 @@ classes/
 *.ipr
 *.iws
 
+#Minecraft
+run/
+runV2/
+
 # vscode
 
 .settings/
@@ -24,10 +28,12 @@ bin/
 .classpath
 .project
 
-# macos
+# Files from Forge MDK
 
-*.DS_Store
+forge*changelog.txt
 
-# fabric
+# macOS
 
-run/
+.DS_Store
+.AppleDouble
+.LSOverride
