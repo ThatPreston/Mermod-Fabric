@@ -27,7 +27,7 @@ public class RegistryHandler {
     public static SpecialRecipeSerializer<NecklaceModifierRecipe> NECKLACE_MODIFIER_SERIALIZER;
     public static ArrayList<SeaNecklaceModifier> NECKLACE_MODIFIERS = new ArrayList<>();
     public static void init() {
-        if(Mermod.trinketsInstalled && false) {
+        if(Mermod.trinketsInstalled) {
             SEA_NECKLACE = TrinketsIntegration.getNecklaceItem();
         } else {
             SEA_NECKLACE = new SeaNecklace();
