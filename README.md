@@ -1,14 +1,14 @@
-![Mermod icon](https://i.imgur.com/6D3w3Ox.png)
 # Mermod
 
-## Description
+<img src="https://user-images.githubusercontent.com/52404366/189512244-52377ec0-6605-4202-823b-bcd32da08e1d.png" width="100" height="100">
 
-Mermod adds a necklace that gives players mermaid tails upon contact with water, 
+Mermod adds a magical necklace that transforms you into a merperson in water! For more information, please refer to the [official wiki.](https://github.com/ThatPreston/Mermod-Fabric/wiki)
 
-Necklaces can be dyed any color by combining them with dyes in the crafting grid, When a necklace is dyed; the player's tail will be the same color as the necklace's crystal, the necklace can be worn by placing it in the chestplate slot or optionally an accessory slot if the [Curios mod](https://www.curseforge.com/minecraft/mc-mods/curios) or the [Trinkets mod](https://www.curseforge.com/minecraft/mc-mods/trinkets) is installed.
-
-Starting in version 1.8 of the mod; the necklace gives dolphin's grace, water breathing, and night vision underwater if worn in a trinket slot. These effects can be disabled inside the mermod config itself at any time, Merlings from the [Origins mod](https://www.curseforge.com/minecraft/mc-mods/origins) will have a white mermaid tail by default and custom origins can also be given tails of any color.
-
-## License
+This mod will not be ported to earlier versions, so please do not ask. For the forge version of this mod, [click here.](https://www.curseforge.com/minecraft/mc-mods/mermaid-tail-mod)
 
 Mermod is licensed under GNU GPLv3, a free and open-source license. For more information, please see the [license file](https://github.com/ThatPreston/Mermod-Fabric/blob/master/LICENSE).
+Feel free to use this mod in modpacks.
+
+[![](https://dcbadge.vercel.app/api/server/QS9Daqs4WX?style=flat)](https://discord.gg/QS9Daqs4WX)
+[![](http://cf.way2muchnoise.eu/mermod-fabric.svg)](https://www.curseforge.com/minecraft/mc-mods/mermod-fabric)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)

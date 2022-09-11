@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
   "id": "mermod",
-  "version": "2.0",
+  "version": "2.1",
   "name": "Mermod",
   "description": "Mermod adds a magical necklace that transforms you into a merperson in water!",
   "authors": [
     "ThatPreston"
   ],
   "contributors": [
-    "Kichura"
+    "Kichura",
+    "albertosaurio65"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/mermod-fabric",
