@@ -1,0 +1,16 @@
+{
+  "item.mermod.sea_necklace": "Collar de mar",
+  "item.mermod.sea_crystal": "Cristal de mar",
+  "item.mermod.mermaid_bra_modifier": "Sujetador de sirena",
+  "item.mermod.tail_gradient_modifier": "Gradiente de cola",
+  "item.mermod.glowing_pearl_modifier": "Perla resplandeciente",
+  "item.mermod.moon_rock_modifier": "Roca lunar",
+  "item.mermod.ursula_shell_modifier": "Concha de Úrsula",
+  "tooltip.mermod.modifierHint": "Mantenga presionada la tecla Mayús y haga clic con el botón derecho para eliminar los modificadores",
+  "tooltip.mermod.canBeDyed": "Se puede teñir",
+  "config.mermod.name": "Configuración Mermod",
+  "config.mermod.option.swimSpeed": "Efecto de velocidad de natación",
+  "config.mermod.option.swimSpeedMultiplier": "Multiplicador de velocidad de natación",
+  "config.mermod.option.waterBreathing": "Efecto de respiración de agua",
+  "config.mermod.option.nightVision": "Efecto de visión nocturna"
+}
