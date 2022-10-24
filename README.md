@@ -10,4 +10,4 @@ Feel free to use this mod in modpacks.
 
 [![](https://dcbadge.vercel.app/api/server/QS9Daqs4WX?style=flat)](https://discord.gg/QS9Daqs4WX)
 [![](http://cf.way2muchnoise.eu/mermod-fabric.svg)](https://www.curseforge.com/minecraft/mc-mods/mermod-fabric)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
