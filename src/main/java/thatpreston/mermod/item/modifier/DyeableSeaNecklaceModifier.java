@@ -5,7 +5,6 @@ import net.minecraft.item.DyeableItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -23,6 +22,6 @@ public class DyeableSeaNecklaceModifier extends SeaNecklaceModifier implements D
     }
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new TranslatableText("tooltip.mermod.canBeDyed").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.mermod.canBeDyed").formatted(Formatting.GRAY));
     }
 }

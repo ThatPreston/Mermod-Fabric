@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mermod",
-  "version": "2.1",
+  "version": "2.2",
   "name": "Mermod",
   "description": "Mermod adds a magical necklace that transforms you into a merperson in water!",
   "authors": [
@@ -23,18 +23,15 @@
     ],
     "client": [
       "thatpreston.mermod.MermodClient"
-    ],
-    "figura": [
-      "thatpreston.mermod.integration.figura.MermodFiguraAPI"
     ]
   },
   "mixins": [
     "mermod.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.10",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.19.x",
     "java": ">=17"
   },
   "suggests": {

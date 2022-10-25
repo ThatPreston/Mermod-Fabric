@@ -81,7 +81,7 @@ public class SeaNecklaceUtils {
             String id = modifierType.getId();
             String category = modifierType.getCategory();
             if(compound.getString(category).equals(id)) {
-                TranslatableText text = new TranslatableText("item.mermod." + id + "_modifier");
+                MutableText text = Text.translatable("item.mermod." + id + "_modifier");
                 if(modifierType.isColorable()) {
                     text.setStyle(Style.EMPTY.withColor(compound.getInt(category + "_color")));
                 } else {
@@ -92,7 +92,7 @@ public class SeaNecklaceUtils {
             }
         }
         if(count > 0) {
-            tooltip.add(new TranslatableText("tooltip.mermod.modifierHint").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("tooltip.mermod.modifierHint").formatted(Formatting.GRAY));
         }
     }
     public static void giveNecklaceEffects(LivingEntity entity) {

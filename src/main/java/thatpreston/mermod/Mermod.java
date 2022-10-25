@@ -7,7 +7,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import thatpreston.mermod.integration.figura.MermodFiguraAPI;
 import thatpreston.mermod.integration.omegaconfig.MermodConfig;
 import thatpreston.mermod.integration.origins.OriginsIntegration;
 import thatpreston.mermod.integration.trinkets.TrinketsIntegration;
@@ -44,9 +43,6 @@ public class Mermod implements ModInitializer {
     }
     public static boolean checkTailConditions(Entity entity) {
         if(!entity.isInvisible() && entity.isTouchingWater()) {
-            if(figuraInstalled) {
-                return !MermodFiguraAPI.checkDisabled(entity);
-            }
             return true;
         }
         return false;
