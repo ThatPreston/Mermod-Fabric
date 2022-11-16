@@ -3,6 +3,7 @@ package thatpreston.mermod;
 import draylar.omegaconfig.OmegaConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.cauldron.CauldronBehavior;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
@@ -31,6 +32,12 @@ public class Mermod implements ModInitializer {
             OriginsIntegration.registerPowerFactory();
         }
         RegistryHandler.init();
+        registerCauldronBehavior();
+    }
+    private void registerCauldronBehavior() {
+        CauldronBehavior.WATER_CAULDRON_BEHAVIOR.put(RegistryHandler.SEA_NECKLACE, CauldronBehavior.CLEAN_DYEABLE_ITEM);
+        CauldronBehavior.WATER_CAULDRON_BEHAVIOR.put(RegistryHandler.MERMAID_BRA_MODIFIER, CauldronBehavior.CLEAN_DYEABLE_ITEM);
+        CauldronBehavior.WATER_CAULDRON_BEHAVIOR.put(RegistryHandler.TAIL_GRADIENT_MODIFIER, CauldronBehavior.CLEAN_DYEABLE_ITEM);
     }
     public static ItemStack getNecklace(PlayerEntity player) {
         ItemStack chest = player.getEquippedStack(EquipmentSlot.CHEST);
