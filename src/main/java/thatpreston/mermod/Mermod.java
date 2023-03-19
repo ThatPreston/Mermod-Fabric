@@ -8,6 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import thatpreston.mermod.integration.figura.MermodFiguraAPI;
 import thatpreston.mermod.integration.omegaconfig.MermodConfig;
 import thatpreston.mermod.integration.origins.OriginsIntegration;
 import thatpreston.mermod.integration.trinkets.TrinketsIntegration;
@@ -49,12 +50,18 @@ public class Mermod implements ModInitializer {
         return ItemStack.EMPTY;
     }
     public static boolean checkTailConditions(Entity entity) {
-        if(!entity.isInvisible() && entity.isTouchingWater()) {
+        return !entity.isInvisible() && entity.isTouchingWater();
+    }
+    public static boolean shouldRenderTail(Entity entity) {
+        if(checkTailConditions(entity)) {
+            if(figuraInstalled) {
+                return MermodFiguraAPI.isTailVisible(entity.getUuid());
+            }
             return true;
         }
         return false;
     }
-    public static boolean getPlayerHasTail(PlayerEntity player) {
+    public static boolean hasTailStyle(PlayerEntity player) {
         ItemStack necklace = getNecklace(player);
         if(!necklace.isEmpty()) {
             return true;

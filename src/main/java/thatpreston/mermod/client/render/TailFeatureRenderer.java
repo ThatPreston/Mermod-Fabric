@@ -22,7 +22,7 @@ public class TailFeatureRenderer<T extends PlayerEntity, M extends BipedEntityMo
     }
     @Override
     public void render(MatrixStack stack, VertexConsumerProvider provider, int light, T entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {
-        if(Mermod.checkTailConditions(entity)) {
+        if(Mermod.shouldRenderTail(entity)) {
             MermaidTailStyle style = Mermod.getTailStyle(entity);
             if(style != null) {
                 stack.push();

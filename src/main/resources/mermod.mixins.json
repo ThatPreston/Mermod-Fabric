@@ -3,13 +3,15 @@
   "minVersion": "0.8",
   "package": "thatpreston.mermod.client.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "thatpreston.mermod.client.mixin.MermodMixinConfigPlugin",
   "mixins": [
   ],
   "client": [
     "PlayerEntityRendererMixin",
     "ArmorFeatureRendererMixin",
     "GameRendererMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "AvatarMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -28,9 +28,9 @@ public abstract class PlayerEntityRendererMixin extends LivingEntityRenderer<Abs
     }
     @Inject(method = "setModelPose", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/AbstractClientPlayerEntity;isInSneakingPose()Z", shift = At.Shift.AFTER))
     public void onSetModelPose(AbstractClientPlayerEntity player, CallbackInfo info) {
-        if(Mermod.checkTailConditions(player)) {
+        if(Mermod.shouldRenderTail(player)) {
             MermaidTailStyle style = Mermod.getTailStyle(player);
-            if (style != null) {
+            if(style != null) {
                 this.getModel().rightLeg.visible = false;
                 this.getModel().leftLeg.visible = false;
                 this.getModel().rightPants.visible = false;

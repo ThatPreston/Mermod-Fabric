@@ -12,7 +12,7 @@ public abstract class LivingEntityMixin {
     @ModifyVariable(method = "travel", at = @At(value = "STORE", ordinal = 0), ordinal = 1)
     public float modifyFloat(float original) {
         LivingEntity entity = (LivingEntity)(Object)this;
-        if(Mermod.MERMOD_CONFIG.swimSpeed && Mermod.checkTailConditions(entity) && entity instanceof PlayerEntity && Mermod.getPlayerHasTail((PlayerEntity)entity)) {
+        if(Mermod.MERMOD_CONFIG.swimSpeed && Mermod.checkTailConditions(entity) && entity instanceof PlayerEntity && Mermod.hasTailStyle((PlayerEntity)entity)) {
             return original * Mermod.MERMOD_CONFIG.swimSpeedMultiplier;
         }
         return original;
