@@ -5,6 +5,7 @@ import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
+import net.minecraft.recipe.book.CraftingRecipeCategory;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import thatpreston.mermod.utils.SeaNecklaceUtils;
@@ -15,8 +16,8 @@ import thatpreston.mermod.item.modifier.SeaNecklaceModifier;
 import java.util.List;
 
 public class NecklaceModifierRecipe extends SpecialCraftingRecipe {
-    public NecklaceModifierRecipe(Identifier identifier) {
-        super(identifier);
+    public NecklaceModifierRecipe(Identifier identifier, CraftingRecipeCategory category) {
+        super(identifier, category);
     }
     @Override
     public boolean matches(CraftingInventory inventory, World world) {

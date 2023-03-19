@@ -19,7 +19,7 @@ import java.util.List;
 
 public class SeaNecklace extends Item implements DyeableItem, ISeaNecklace {
     public SeaNecklace() {
-        super(new FabricItemSettings().group(ItemGroup.TOOLS).maxCount(1).equipmentSlot(stack -> EquipmentSlot.CHEST));
+        super(new FabricItemSettings().maxCount(1).equipmentSlot(stack -> EquipmentSlot.CHEST));
     }
     @Override
     public int getColor(ItemStack stack) {

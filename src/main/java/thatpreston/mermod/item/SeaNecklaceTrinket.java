@@ -7,7 +7,6 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.DyeableItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
@@ -21,7 +20,7 @@ import java.util.List;
 
 public class SeaNecklaceTrinket extends TrinketItem implements DyeableItem, ISeaNecklace {
     public SeaNecklaceTrinket() {
-        super(new FabricItemSettings().group(ItemGroup.TOOLS).maxCount(1));
+        super(new FabricItemSettings().maxCount(1));
     }
     @Override
     public int getColor(ItemStack stack) {
