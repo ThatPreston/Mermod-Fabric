@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import thatpreston.mermod.utils.SeaNecklaceUtils;
@@ -42,7 +43,7 @@ public class NecklaceModifierRecipe extends SpecialCraftingRecipe {
         return !necklace.isEmpty() && !modifiers.isEmpty() && SeaNecklaceUtils.canAddModifiers(necklace, modifiers);
     }
     @Override
-    public ItemStack craft(CraftingInventory inventory) {
+    public ItemStack craft(CraftingInventory inventory, DynamicRegistryManager registryManager) {
         List<ItemStack> modifiers = Lists.newArrayList();
         ItemStack necklace = ItemStack.EMPTY;
         for(int i = 0; i < inventory.size(); i++) {

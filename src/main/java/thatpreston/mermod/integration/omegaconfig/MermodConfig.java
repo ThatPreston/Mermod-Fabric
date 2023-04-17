@@ -1,8 +1,8 @@
 package thatpreston.mermod.integration.omegaconfig;
 
+import draylar.omegaconfig.api.Comment;
 import draylar.omegaconfig.api.Config;
 import draylar.omegaconfig.api.Syncing;
-import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 import org.jetbrains.annotations.Nullable;
 
 public class MermodConfig implements Config {
