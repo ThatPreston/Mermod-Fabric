@@ -26,11 +26,12 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "dev.emi:trinkets:${project.trinkets_version}"
+	modImplementation "com.github.apace100:apoli:${project.apoli_version}"
 	modImplementation "maven.modrinth:figura:${project.figura_version}"
 	include("com.github.Draylar.omega-config:omega-config-base:${project.omegaconfig_version}")
 	modImplementation("com.github.Draylar.omega-config:omega-config-base:${project.omegaconfig_version}")
-	implementation("com.github.Moonlight-MC.LuaJ:luaj-core:3.0.5-figura")
-	implementation("com.github.Moonlight-MC.LuaJ:luaj-jse:3.0.5-figura")
+	implementation("com.github.Moonlight-MC.LuaJ:luaj-core:3.0.6-figura")
+	implementation("com.github.Moonlight-MC.LuaJ:luaj-jse:3.0.6-figura")
 }
 
 processResources {

@@ -1,7 +1,7 @@
 package thatpreston.mermod.integration.figura;
 
 import org.moon.figura.avatar.Avatar;
-import org.moon.figura.lua.FiguraAPI;
+import org.moon.figura.entries.FiguraAPI;
 import org.moon.figura.lua.LuaWhitelist;
 
 import java.util.*;
@@ -28,6 +28,10 @@ public class MermodFiguraAPI implements FiguraAPI {
     }
     @Override
     public Collection<Class<?>> getWhitelistedClasses() {
+        return Collections.singleton(MermodFiguraAPI.class);
+    }
+    @Override
+    public Collection<Class<?>> getDocsClasses() {
         return Collections.singleton(MermodFiguraAPI.class);
     }
     public static boolean isTailVisible(UUID owner) {
