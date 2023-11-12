@@ -1,6 +1,6 @@
 package thatpreston.mermod.client.mixin;
 
-import org.moon.figura.avatar.Avatar;
+import org.figuramc.figura.avatar.Avatar;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

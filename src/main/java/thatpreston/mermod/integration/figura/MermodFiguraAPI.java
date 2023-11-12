@@ -1,8 +1,8 @@
 package thatpreston.mermod.integration.figura;
 
-import org.moon.figura.avatar.Avatar;
-import org.moon.figura.entries.FiguraAPI;
-import org.moon.figura.lua.LuaWhitelist;
+import org.figuramc.figura.avatar.Avatar;
+import org.figuramc.figura.entries.FiguraAPI;
+import org.figuramc.figura.lua.LuaWhitelist;
 
 import java.util.*;
 

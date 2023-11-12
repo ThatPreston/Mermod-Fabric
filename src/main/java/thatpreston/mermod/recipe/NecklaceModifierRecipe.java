@@ -1,7 +1,7 @@
 package thatpreston.mermod.recipe;
 
 import com.google.common.collect.Lists;
-import net.minecraft.inventory.CraftingInventory;
+import net.minecraft.inventory.RecipeInputInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
@@ -21,7 +21,7 @@ public class NecklaceModifierRecipe extends SpecialCraftingRecipe {
         super(identifier, category);
     }
     @Override
-    public boolean matches(CraftingInventory inventory, World world) {
+    public boolean matches(RecipeInputInventory inventory, World world) {
         ItemStack necklace = ItemStack.EMPTY;
         List<ItemStack> modifiers = Lists.newArrayList();
         for(int i = 0; i < inventory.size(); i++) {
@@ -43,7 +43,7 @@ public class NecklaceModifierRecipe extends SpecialCraftingRecipe {
         return !necklace.isEmpty() && !modifiers.isEmpty() && SeaNecklaceUtils.canAddModifiers(necklace, modifiers);
     }
     @Override
-    public ItemStack craft(CraftingInventory inventory, DynamicRegistryManager registryManager) {
+    public ItemStack craft(RecipeInputInventory inventory, DynamicRegistryManager registryManager) {
         List<ItemStack> modifiers = Lists.newArrayList();
         ItemStack necklace = ItemStack.EMPTY;
         for(int i = 0; i < inventory.size(); i++) {
